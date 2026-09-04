@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>For Prof. Annu Kumari</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+<title>For Ma'am</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@600;700;800&display=swap');
 
@@ -101,9 +102,9 @@
     padding: 15px 16px;
     font-size: 13px;
   }
-  .row{ display:flex; justify-content:space-between; padding: 7.5px 0; border-bottom: 1px dashed var(--border); }
+  .row{ display:flex; justify-content:space-between; gap: 10px; padding: 7.5px 0; border-bottom: 1px dashed var(--border); }
   .row:last-child{ border-bottom:none; }
-  .row .k{ color: var(--muted); }
+  .row .k{ color: var(--muted); flex-shrink:0; }
   .row .v{ color:#fff; font-weight:600; text-align:right; }
 
   .factbox{
@@ -174,6 +175,28 @@
     pointer-events: none;
     line-height: 1;
   }
+
+  @media (max-width: 480px){
+    body{ padding: 16px 10px; align-items:flex-start; }
+    .card{ border-radius: 12px; max-width: 100%; }
+    .urlbar{ font-size: 10.5px; padding: 6px 10px; }
+    .hero{ padding: 16px 12px 2px; }
+    .stage{ padding: 6px 18px 20px; }
+    h1{ font-size: 21px; margin: 8px 0 12px; }
+    p{ font-size: 12.5px; line-height: 1.75; }
+    .eyebrow{ font-size: 10px; }
+    .factbox{ padding: 12px 13px; font-size: 12px; }
+    .details{ padding: 13px 14px; font-size: 12px; }
+    .row{ padding: 7px 0; flex-wrap: wrap; }
+    .btn{ width:100%; justify-content:center; padding: 13px 16px; font-size: 12.5px; }
+    .signoff{ flex-direction: column; align-items:flex-start; gap: 8px; }
+    .tag{ align-self:flex-start; }
+  }
+
+  @media (max-width: 360px){
+    h1{ font-size: 19px; }
+    .row .k, .row .v{ font-size: 11.5px; }
+  }
 </style>
 </head>
 <body>
@@ -181,7 +204,7 @@
   <div class="card">
     <div class="chrome">
       <div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div>
-      <div class="urlbar">🔒 cse-datascience.dev/for-annu-mam</div>
+      <div class="urlbar">🔒 cse-datascience.dev/for-mam</div>
     </div>
 
     <div class="hero">
@@ -246,7 +269,7 @@
     <!-- STAGE 1: Invitation -->
     <div class="stage active" id="stage1">
       <div class="eyebrow">// a message for you, ma'am</div>
-      <h1>Dear <span>Prof. Annu Kumari</span>,<br>Happy Teachers' Day!</h1>
+      <h1>Dear <span>Ma'am</span>,<br>Happy Teachers' Day!</h1>
       <p>You taught us Computer Networks in our 5th semester, and now you are guiding us through Deep Learning in our 6th &mdash; and honestly, both subjects make a lot more sense because of how patiently you explain them.</p>
       <p class="muted">On this special day, we, the CSE (Data Science) batch, would love for you to be part of our little celebration. There is something more waiting for you below.</p>
       <button class="btn" onclick="goTo(2)">I have something more for you →</button>
@@ -268,7 +291,7 @@
     <!-- STAGE 3: Event details -->
     <div class="stage" id="stage3">
       <div class="eyebrow">// build successful ✅</div>
-      <h1>You're <span>officially invited</span>, ma'am!</h1>
+      <h1>This celebration <span>isn't complete</span> without you, ma'am!</h1>
       <p>We would be truly honoured to have you celebrate this Teachers' Day with us in person.</p>
       <div class="details">
         <div class="row"><span class="k">event</span><span class="v">Teachers' Day Celebration</span></div>
